@@ -27,11 +27,11 @@ class Producto {
 			return $consulta->fetchAll(PDO::FETCH_CLASS,__CLASS__);
 			//return $consulta->fetchAll(PDO::FETCH_CLASS,"Producto");
 		} catch (Exception $e) {
-			echo "Falló la consulta: " . $e->getMessage();
+			echo "Falló la consulta leer productos: " . $e->getMessage();
 		}
 	}
 
-	public function crearPoducto() {
+	public function crearProducto() {
 		try {
 			$consulta = "INSERT INTO productos(nombre, descripcion, marca_id, precio_compra, precio_venta, cantidad) VALUES (?,?,?,?,?,?);";
 			$this->conexion->prepare($consulta)
@@ -39,7 +39,7 @@ class Producto {
 			$this->producto_id = $this->conexion->lastInsertId(); //Regresa el ultimo id insertado
 			return $this; //Devuelve el objeto completo
 		} catch (Exception $e) {
-			echo "Falló al ejecutar la consulta: " . $e->getMessaje();
+			echo "Falló la consulta crear productos: " . $e->getMessaje();
 		}
 	}
 
@@ -51,17 +51,17 @@ class Producto {
 			$consulta->execute(array($producto_id));
 			return $consulta->fetch(); //fetch devuelve un solo registro
 		} catch (Exception $e) {
-			echo "Falló ejecutando la consulta: " . $e->getMessaje();
+			echo "Falló la consulta consultar id: " . $e->getMessaje();
 		}		
 	}
 
-	public function actualizarPoducto() {
+	public function actualizarProducto() {
 		try {
 			$consulta = "UPDATE productos SET nombre=?, descripcion=?, marca_id=?, precio_compra=?, precio_venta=?, cantidad=? WHERE producto_id=?;";
 			$this->conexion->prepare($consulta)
 							->execute(array($this->nombre, $this->descripcion, $this->marca_id, $this->precio_compra, $this->precio_venta, $this->cantidad, $this->producto_id));
 		} catch (Exception $e) {
-			echo "Falló la consulta actualizar: " . $e->getMessaje();
+			echo "Falló la consulta actualizar producto: " . $e->getMessaje();
 		}
 	}
 

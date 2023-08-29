@@ -16,9 +16,9 @@
 			<nav class="header-nav">
 				<ul class="nav-ul">
 					<li class="nav-ul-li"> <a href="#">Inicio</a> </li>
-					<li class="nav-ul-li"> <a href="?controller=producto">Productos</a> </li>
-					<li class="nav-ul-li"> <a href="?controller=marca">Marca</a> </li>
-					<li class="nav-ul-li"> <a href="#"></a> </li>
+					<li class="nav-ul-li"> <a href="?controller=marca">Marcas</a> </li>
+					<li class="nav-ul-li"> <a href="?controller=producto">Productos</a> </li>	
+					<li class="nav-ul-li"> <a href="?controller=proveedor">Proveedores</a> </li>
 					<li class="nav-ul-li"> <a href="#"></a> </li>
 				</ul>
 			</nav>

@@ -30,7 +30,7 @@ class ProductoController {
 		$producto->setPrecio_compra($_POST['precio_compra']);
 		$producto->setPrecio_venta($_POST['precio_venta']);
 		$producto->setCantidad($_POST['cantidad']);
-		$producto->crearPoducto();
+		$producto->crearProducto();
 		header('location:?controller=producto');
 	}
 
@@ -57,7 +57,7 @@ class ProductoController {
 		$producto->setPrecio_compra($_POST['precio_compra']);
 		$producto->setPrecio_venta($_POST['precio_venta']);
 		$producto->setCantidad($_POST['cantidad']);
-		$producto->actualizarPoducto();
+		$producto->actualizarProducto();
 		header('location:?controller=producto');
 	}
 

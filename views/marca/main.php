@@ -1,8 +1,8 @@
 <?php require "views/contenido/header.php"; ?>
 	<div class="contenido-producto">
-		<h3 class="p-titulo">Lista de Productos</h3>
+		<h3 class="p-titulo">Lista de Marcas</h3>
 		<div class="p-nuevo">
-			<a href="?controller=marca&action=create">Nuevo Producto</a>
+			<a href="?controller=marca&action=create">Nueva Marca</a>
 		</div>
 		<div class="p-cont">
 			<table class="p-table">
