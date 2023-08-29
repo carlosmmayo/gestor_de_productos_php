@@ -69,7 +69,7 @@ class Producto {
 	* El metodo desactivarPoducto() cambia el estado del registro en la base de datos a 0
 	* Que es como eliminar un registro en la base de datos pero el registro se conserva en la base de datos 
 	*/
-	public function desactivarPoducto() {
+	public function desactivarProducto() {
 		try {
 			$consulta = "UPDATE productos SET estado=0 WHERE producto_id=?;";
 			$this->conexion->prepare($consulta)

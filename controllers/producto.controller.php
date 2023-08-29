@@ -64,7 +64,7 @@ class ProductoController {
 	public function destroy() {
 		$producto = new Producto();
 		$producto = $producto->consultarId($_GET['producto_id']);
-		$producto->desactivarPoducto();
+		$producto->desactivarProducto();
 		header('location:?controller=producto');
 	}
 
