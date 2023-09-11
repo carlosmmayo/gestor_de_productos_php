@@ -75,7 +75,7 @@ class Producto {
 			$this->conexion->prepare($consulta)
 							->execute(array($this->producto_id));
 		} catch (Exception $e) {
-			echo "Falló ejecutando la consulta: " . $e->getMessaje();
+			echo "Falló la consulta desactivar producto: " . $e->getMessaje();
 		}
 	}
 

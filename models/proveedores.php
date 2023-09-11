@@ -49,7 +49,7 @@ class Proveedor {
 			$consulta->execute(array($proveedor_id));
 			return $consulta->fetch(); //fetch devuelve un solo registro
 		} catch (Exception $e) {
-			echo "Falló la consulta consultar Id: " . $e->getMessaje();
+			echo "Falló la consulta consultar id: " . $e->getMessaje();
 		}		
 	}
 

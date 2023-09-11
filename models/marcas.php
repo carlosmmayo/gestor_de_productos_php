@@ -65,7 +65,7 @@ Class Marca {
 			$this->conexion->prepare($consulta)
 							->execute(array($this->marca_id));
 		} catch (Exception $e) {
-			echo "Falló ejecutando la consulta: " . $e->getMessaje();
+			echo "Falló la consulta desactivar marca: " . $e->getMessaje();
 		}
 	}
 

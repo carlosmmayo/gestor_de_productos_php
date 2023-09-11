@@ -15,11 +15,12 @@
 			</header>
 			<nav class="header-nav">
 				<ul class="nav-ul">
-					<li class="nav-ul-li"> <a href="#">Inicio</a> </li>
+					<li class="nav-ul-li"> <a href="?">Inicio</a> </li>
 					<li class="nav-ul-li"> <a href="?controller=marca">Marcas</a> </li>
 					<li class="nav-ul-li"> <a href="?controller=producto">Productos</a> </li>	
 					<li class="nav-ul-li"> <a href="?controller=proveedor">Proveedores</a> </li>
-					<li class="nav-ul-li"> <a href="#"></a> </li>
+					<li class="nav-ul-li"> <a href="?controller=usuario">Usuarios</a> </li>
+					<li class="nav-ul-li"> <a href="?controller=usuario&action=cerrarSession">Salir</a> </li>
 				</ul>
 			</nav>
 			<footer class="footer">
