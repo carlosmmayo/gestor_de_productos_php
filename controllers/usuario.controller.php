@@ -65,10 +65,14 @@ class UsuarioController {
 	public function acceso() {
 		$email = $_POST['email'];
 		$contrasena = $_POST['contrasena'];
-		if ($this->usuario->validar($email,$contrasena)) {
-			header('location: index.php');
-		} else {
+		if (($email == "") && ($contrasena == "")) {
 			header('location: index.php?error');
+		} else {
+			if (($this->usuario->validar($email,$contrasena))) {
+				header('location: index.php');
+			} else {
+				header('location: index.php?error');
+			}
 		}
 	}
 
